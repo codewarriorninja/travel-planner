@@ -13,7 +13,7 @@ export default auth((req) => {
   // If user is not logged in and trying to access protected pages, redirect to sign-in
   if(!isLoggedIn && 
     (nextUrl.pathname.startsWith('/trips') || 
-    nextUrl.pathname.startsWith('/jobs/post'))
+    nextUrl.pathname.startsWith('/globe'))
   ){
     return NextResponse.redirect(new URL('/sign-in', nextUrl));
   }
