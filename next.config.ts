@@ -5,6 +5,11 @@ const nextConfig: NextConfig = {
     domains:['avatars.githubusercontent.com', 'lh3.googleusercontent.com',],
     remotePatterns:[
       {
+        protocol: 'https',
+        hostname: '**.ufs.sh', 
+        pathname: '/**',  
+      },
+      {
         hostname:'images.unsplash.com'
       }
     ]
